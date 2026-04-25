@@ -1,0 +1,124 @@
+.chatbot-page {
+  padding: 60px;
+}
+
+.chatbot-shell {
+  max-width: 980px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+}
+
+.chatbot-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.chatbot-title h1 {
+  font-size: 22px;
+  margin: 0;
+  color: #1b1b1b;
+}
+
+.chatbot-title p {
+  margin: 6px 0 0;
+  color: #555;
+}
+
+.chat-window {
+  height: 460px;
+  overflow: auto;
+  border: 1px solid #e7e7e7;
+  border-radius: 14px;
+  padding: 14px;
+  background: #fafafa;
+}
+
+.msg {
+  display: inline-block;
+  max-width: 78%;
+  padding: clamp(8px, 1.2vw, 10px) clamp(10px, 1.6vw, 12px);
+  border-radius: 14px;
+  margin: clamp(4px, 0.8vw, 6px) 0;
+  line-height: 1.25;
+  font-size: clamp(11px, 1.4vw, 14px);
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  clear: both;
+}
+
+@media (max-width: 720px) {
+  .chatbot-page {
+    padding: 24px;
+  }
+
+  .chatbot-shell {
+    padding: 16px;
+  }
+
+  .msg {
+    max-width: 92%;
+  }
+}
+
+.msg.bot {
+  background: #e9f3ef;
+  color: #1b1b1b;
+  float: left;
+  border-bottom-left-radius: 6px;
+}
+
+.msg.user {
+  background: #0f9d58;
+  color: white;
+  float: right;
+  border-bottom-right-radius: 6px;
+}
+
+.composer {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.composer input {
+  flex: 1;
+  border: 1px solid #d8d8d8;
+  border-radius: 12px;
+  padding: 11px 12px;
+  font-size: clamp(12px, 1.4vw, 14px);
+  outline: none;
+  background: white;
+}
+
+.composer input:focus {
+  border-color: #0f9d58;
+  box-shadow: 0 0 0 3px rgba(15, 157, 88, 0.15);
+}
+
+.chat-error {
+  margin-top: 10px;
+  border: 1px solid #e53935;
+  background: #fff5f5;
+  color: #b71c1c;
+  border-radius: 12px;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.chat-error[hidden] {
+  display: none;
+}
+
+.chat-error-text {
+  flex: 1;
+  font-size: 14px;
+}

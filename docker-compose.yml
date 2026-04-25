@@ -1,0 +1,47 @@
+services:
+  api:
+    build: .
+    image: hackathon-fastapi:1.0
+    env_file:
+      - ./.env
+    ports:
+      - "8000:8000"
+    volumes:
+      - ${FASTAPI_APP}:/app
+    networks:
+      - um-net
+    command: ["python", "-m", "uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+    restart: unless-stopped
+
+  postgrest:
+    image: postgrest/postgrest
+    ports:
+      - "3000:3000"
+    networks:
+      - um-net
+    volumes:
+      - ./postgrest.conf:/etc/postgrest.conf
+    command: [ "postgrest", "/etc/postgrest.conf" ]
+    restart: unless-stopped
+    depends_on:
+      - database
+
+  database:
+    image: postgres
+    ports:
+      - "5432:5432"
+    env_file:
+      - ./.env
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: ${DB_USERNAME}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    networks:
+      - um-net
+    volumes:
+      - ${DB_VOLUME}:/var/lib/postgresql
+    restart: unless-stopped
+
+networks:
+  um-net:
+    external: true

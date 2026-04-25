@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Rescue - Chatbot</title>
+  <link rel="icon" type="image/png" href="../media/food_rescue.png" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/chatbot.css" />
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="index.html">
+      <img class="logo-mark" src="../media/food_rescue.png" alt="FoodRescue" />
+      <span class="logo-text">FoodRescue</span>
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="benefit.html">Benefits</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a class="btn-outline" href="index.html">Back</a>
+  </header>
+
+  <main class="chatbot-page">
+    <div class="chatbot-shell">
+      <div class="chatbot-header">
+        <div class="chatbot-title">
+          <h1>Request Pickup Assistant</h1>
+          <p>Share your donation details and we’ll guide you.</p>
+        </div>
+        <div class="chatbot-actions">
+          <button class="btn-outline" type="button" id="clearChatBtn">Clear</button>
+        </div>
+      </div>
+
+      <div class="chat-window" id="chatWindow" aria-live="polite">
+        <div class="msg bot">Hi! What food are you donating, and roughly how much?</div>
+      </div>
+
+      <form class="composer" id="chatForm" autocomplete="off">
+        <input id="chatInput" type="text" placeholder="Type your message..." />
+        <button class="btn-primary" type="submit">Send</button>
+      </form>
+
+      <div class="chat-error" id="chatError" role="alert" hidden>
+        <div class="chat-error-text" id="chatErrorText"></div>
+        <button class="btn-outline" type="button" id="retryBtn">Retry</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="../js/chatbot.js"></script>
+</body>
+</html>

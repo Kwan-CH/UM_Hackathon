@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Rescue</title>
+    <link rel="icon" type="image/png" href="../media/food_rescue.png">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <a class="logo" href="index.html">
+        <img class="logo-mark" src="../media/food_rescue.png" alt="FoodRescue" />
+        <span class="logo-text">FoodRescue</span>
+    </a>
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="./benefit.html">Benefits</a>
+        <a href="./about.html">About Us</a>
+        <a href="./contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+        <a class="btn-primary" href="chatbot.html">Request Pickup</a>
+        <a class="btn-outline" href="login.html">NGO Login</a>
+    </div>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-left">
+        <span class="tag">Fighting Food Waste Together</span>
+        <h1>
+            Turn Surplus<br>
+            Food Into <span class="highlight">Hope</span>
+        </h1>
+        <p>
+            Connect your restaurant with our food rescue network. Request a free pickup 
+            and help feed those in need while reducing waste.
+        </p>
+
+        <div class="hero-buttons">
+            <a class="btn-primary" href="chatbot.html">Request Pickup →</a>
+            <a class="btn-outline" href="about.html">Learn More</a>
+        </div>
+
+        <div class="stats">
+            <div>
+                <h3>2.5M+</h3>
+                <p>Meals Saved</p>
+            </div>
+            <div>
+                <h3>1,200+</h3>
+                <p>Partner Restaurants</p>
+            </div>
+            <div>
+                <h3>98%</h3>
+                <p>Food Utilized</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-right">
+        <div class="hero-right-lead">
+            <span class="tag">Live Snapshot</span>
+            <h2>Pickup activity</h2>
+        </div>
+
+        <div class="hero-cards">
+            <div class="card">
+                <p>Active Today</p>
+                <h3 id="pickupCount">47 Pickups</h3>
+            </div>
+            <div class="card">
+                <p>Typical Match</p>
+                <h3>Under 10 min</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="how">
+    <div class="how-inner">
+        <h2>How it works</h2>
+        <div class="how-grid">
+            <div class="how-card">
+                <h3>1) Describe your surplus</h3>
+                <p>Tell the chatbot what food you have, quantity, pickup time, and location.</p>
+            </div>
+            <div class="how-card">
+                <h3>2) We match nearby NGOs</h3>
+                <p>We find the best candidates based on distance, capacity, and food preferences.</p>
+            </div>
+            <div class="how-card">
+                <h3>3) Pickup gets confirmed</h3>
+                <p>The first NGO to accept gets assigned. You’ll get contacted by them personally.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="../js/index.js"></script>
+</body>
+</html>

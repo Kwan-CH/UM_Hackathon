@@ -1,0 +1,163 @@
+.btn-primary,
+.btn-outline {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.page {
+  padding: 60px;
+}
+
+.page-hero {
+  max-width: 980px;
+  margin: 0 auto 18px;
+  background: white;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+}
+
+.page-hero h1 {
+  margin: 14px 0 10px;
+  font-size: 28px;
+  color: #1b1b1b;
+}
+
+.page-hero p {
+  margin: 0;
+  color: #555;
+  line-height: 1.5;
+}
+
+.cta-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.navbar nav a.active {
+  color: #0f9d58;
+  font-weight: 700;
+}
+
+.grid {
+  max-width: 980px;
+  margin: 18px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.info-card {
+  background: white;
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.info-card h2 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  color: #1b1b1b;
+}
+
+.info-card p {
+  margin: 0;
+  color: #555;
+  line-height: 1.45;
+}
+
+.info-card a {
+  color: #0f9d58;
+  text-decoration: none;
+}
+
+.muted {
+  color: #666;
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+.panel {
+  max-width: 980px;
+  margin: 14px auto 0;
+  background: white;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+}
+
+.panel-head h2 {
+  margin: 0;
+  font-size: 16px;
+  color: #1b1b1b;
+}
+
+.panel-head p {
+  margin: 8px 0 0;
+}
+
+.contact-form {
+  margin-top: 14px;
+  display: grid;
+  gap: 12px;
+}
+
+.field {
+  display: grid;
+  gap: 6px;
+}
+
+.field span {
+  font-size: 13px;
+  color: #333;
+}
+
+.field input,
+.field textarea {
+  border: 1px solid #d8d8d8;
+  border-radius: 12px;
+  padding: 11px 12px;
+  font-size: 14px;
+  outline: none;
+  background: white;
+  resize: vertical;
+}
+
+.field input:focus,
+.field textarea:focus {
+  border-color: #0f9d58;
+  box-shadow: 0 0 0 3px rgba(15, 157, 88, 0.15);
+}
+
+.form-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.form-message {
+  font-size: 13px;
+  color: #0f9d58;
+  min-height: 18px;
+}
+
+.page-footer {
+  max-width: 980px;
+  margin: 18px auto 0;
+  color: #666;
+  font-size: 13px;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .page {
+    padding: 24px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

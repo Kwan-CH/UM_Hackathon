@@ -1,0 +1,180 @@
+.btn-primary,
+.btn-outline {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.navbar .logo {
+  text-decoration: none;
+  color: #333;
+  font-weight: 700;
+}
+
+.ngo-page {
+  padding: 60px;
+}
+
+.ngo-hero {
+  max-width: 1080px;
+  margin: 0 auto 18px;
+  background: white;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+}
+
+.ngo-hero h1 {
+  margin: 14px 0 10px;
+  font-size: 28px;
+  color: #1b1b1b;
+}
+
+.muted {
+  margin: 0;
+  color: #555;
+  line-height: 1.5;
+}
+
+.status-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+
+.status-pill {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #e9f3ef;
+  color: #0f9d58;
+  font-size: 13px;
+}
+
+.status-pill.err {
+  background: #fde7ea;
+  color: #b00020;
+}
+
+.status-meta {
+  color: #666;
+  font-size: 13px;
+}
+
+.ngo-content {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.panel {
+  background: white;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+}
+
+.panel-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.panel-head h2 {
+  margin: 0;
+  font-size: 16px;
+  color: #1b1b1b;
+}
+
+
+.empty {
+  padding: 14px;
+  border-radius: 14px;
+  background: #fafafa;
+  border: 1px solid #e7e7e7;
+  color: #666;
+  display: none;
+}
+
+.request-list {
+  display: grid;
+  gap: 12px;
+}
+
+.request-card {
+  border: 1px solid #e7e7e7;
+  border-radius: 16px;
+  padding: 16px;
+  background: #fafafa;
+}
+
+.request-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.request-id {
+  font-weight: 700;
+  color: #1b1b1b;
+}
+
+.request-meta {
+  color: #666;
+  font-size: 13px;
+}
+
+.request-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 14px;
+}
+
+.field {
+  display: grid;
+  gap: 4px;
+}
+
+.field .k {
+  font-size: 12px;
+  color: #666;
+}
+
+.field .v {
+  color: #1b1b1b;
+  line-height: 1.4;
+}
+
+.request-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.btn-danger {
+  display: inline-block;
+  border: 1px solid #b00020;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: transparent;
+  color: #b00020;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+@media (max-width: 900px) {
+  .ngo-page {
+    padding: 24px;
+  }
+
+  .request-grid {
+    grid-template-columns: 1fr;
+  }
+}

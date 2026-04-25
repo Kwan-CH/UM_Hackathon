@@ -1,0 +1,76 @@
+.login-page {
+  padding: 60px;
+}
+
+.login-shell {
+  max-width: 520px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+}
+
+.login-header h1 {
+  margin: 0;
+  font-size: 22px;
+  color: #1b1b1b;
+}
+
+.login-header p {
+  margin: 8px 0 0;
+  color: #555;
+}
+
+.login-form {
+  margin-top: 18px;
+  display: grid;
+  gap: 12px;
+}
+
+.field {
+  display: grid;
+  gap: 6px;
+}
+
+.field span {
+  font-size: 13px;
+  color: #333;
+}
+
+.field input {
+  border: 1px solid #d8d8d8;
+  border-radius: 12px;
+  padding: 11px 12px;
+  font-size: 14px;
+  outline: none;
+  background: white;
+}
+
+.field input:focus {
+  border-color: #0f9d58;
+  box-shadow: 0 0 0 3px rgba(15, 157, 88, 0.15);
+}
+
+.login-footer {
+  margin-top: 6px;
+  font-size: 13px;
+}
+
+.login-footer a {
+  color: #0f9d58;
+  text-decoration: none;
+}
+
+.login-message {
+  margin-top: 12px;
+  font-size: 13px;
+}
+
+.login-message.ok {
+  color: #0f9d58;
+}
+
+.login-message.err {
+  color: #b00020;
+}

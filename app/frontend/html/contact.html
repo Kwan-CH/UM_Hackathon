@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Rescue - Contact</title>
+  <link rel="icon" type="image/png" href="../media/food_rescue.png" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/contact.css" />
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="index.html">
+      <img class="logo-mark" src="../media/food_rescue.png" alt="FoodRescue" />
+      <span class="logo-text">FoodRescue</span>
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="benefit.html">Benefits</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn-primary" href="chatbot.html">Request Pickup</a>
+      <a class="btn-outline" href="login.html">NGO Login</a>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="page-hero">
+      <span class="tag">Contact</span>
+      <h1>Talk to the FoodRescue team</h1>
+      <p>
+        Have questions about pickups, food safety, or NGO partnerships? Send a message and
+        we’ll get back to you.
+      </p>
+
+      <div class="cta-row">
+        <a class="btn-primary" href="chatbot.html">Request Pickup</a>
+        <a class="btn-outline" href="benefit.html">View Benefits</a>
+      </div>
+    </section>
+
+    <section class="grid" aria-label="Contact information">
+      <div class="info-card">
+        <h2>Email</h2>
+        <p><a href="mailto:support@foodrescue.local">support@foodrescue.local</a></p>
+        <p class="muted">Best for general questions and onboarding.</p>
+      </div>
+
+      <div class="info-card">
+        <h2>Phone</h2>
+        <p><a href="tel:+60125467894">+60 12-546 7894</a></p>
+        <p class="muted">For urgent pickup coordination during operating hours.</p>
+      </div>
+
+      <div class="info-card">
+        <h2>Operating Hours</h2>
+        <p>Mon–Sun</p>
+        <p class="muted">9:00 AM – 6:00 PM</p>
+      </div>
+    </section>
+
+    <section class="panel" aria-label="Contact form">
+      <div class="panel-head">
+        <h2>Send us a message</h2>
+      </div>
+
+      <form class="contact-form" id="contactForm" action="#" method="post" autocomplete="off">
+        <label class="field">
+          <span>Name</span>
+          <input type="text" name="name" placeholder="Your name" required />
+        </label>
+
+        <label class="field">
+          <span>Email</span>
+          <input type="email" name="email" placeholder="you@example.com" required />
+        </label>
+
+        <label class="field">
+          <span>Message</span>
+          <textarea name="message" rows="5" placeholder="How can we help?" required></textarea>
+        </label>
+
+        <div class="form-actions">
+          <button class="btn-primary" type="submit">Submit</button>
+          <a class="btn-outline" href="index.html">Back to Home</a>
+        </div>
+
+        <div class="form-message" id="contactMessage" aria-live="polite"></div>
+      </form>
+    </section>
+
+    <footer class="page-footer">
+      <div class="footer-meta">© <span id="year"></span> FoodRescue</div>
+    </footer>
+  </main>
+
+  <script src="../js/contact.js"></script>
+</body>
+</html>

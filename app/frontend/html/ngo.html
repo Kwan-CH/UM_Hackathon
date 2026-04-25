@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Rescue - NGO Dashboard</title>
+  <link rel="icon" type="image/png" href="../media/food_rescue.png" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/ngo.css" />
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="ngo.html">
+      <img class="logo-mark" src="../media/food_rescue.png" alt="FoodRescue" />
+      <span class="logo-text">FoodRescue</span>
+    </a>
+    <nav>
+      <a href="ngo.html" class="active">Home</a>
+      <a href="benefit.html">Benefits</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="btn-outline" type="button" id="refreshBtn">Refresh</button>
+      <button class="btn-primary" type="button" id="logoutBtn">Logout</button>
+    </div>
+  </header>
+
+  <main class="ngo-page">
+    <section class="ngo-hero">
+      <span class="tag">NGO Dashboard</span>
+      <h1 id="ngoTitle">Your assigned requests</h1>
+      <p class="muted" id="ngoSub">Signed in.</p>
+      <div class="status-row">
+        <div class="status-pill" id="statusPill">Idle</div>
+        <div class="status-meta" id="lastUpdated">Last updated: —</div>
+      </div>
+    </section>
+
+    <section class="ngo-content">
+      <div class="panel">
+        <div class="panel-head">
+          <h2 id="pendingHeader">Pending requests (0)</h2>
+        </div>
+
+        <div class="empty" id="emptyState">No requests assigned right now.</div>
+        <div class="request-list" id="requestList" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../js/ngo.js"></script>
+</body>
+</html>
