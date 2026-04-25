@@ -111,6 +111,7 @@ function renderRequests(requests) {
       : "—";
 
     grid.appendChild(field("Restaurant", r?.restaurant_name ?? "—"));
+    grid.appendChild(field("Contact", r?.contact_number ?? "—"));
     grid.appendChild(field("Food Items", summary));
     grid.appendChild(field("Pickup Time", prettyDate(r?.pickup_time)));
     grid.appendChild(field("Expiry Time", prettyDate(r?.expiry_time)));
